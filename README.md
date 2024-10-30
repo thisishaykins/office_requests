@@ -13,6 +13,11 @@ developed in a live master class coding session at InternPulse.
 
 ![Office Request Category App](static/description/office_request_category_app.png)
 
+## Database Architecture 
+[Link <> Data Structure](https://dbdiagram.io/d/Odoo-ERP-lessgreater-internPulse-672247312c337ee119e77bcb)
+
+![Database](static/description/office_request_db.png)
+
 ## Logic
 
 ...
