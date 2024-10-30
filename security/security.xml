@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- requests Books - User Access -->
+        <record id="access_model_requests_user" model="ir.model.access">
+            <field name="name">requests</field>
+            <field name="model_id" ref="model_requests"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+         <!-- requests Category - User Access -->
+        <record id="access_model_requests_category_user" model="ir.model.access">
+            <field name="name">requests.category</field>
+            <field name="model_id" ref="model_requests_category"/>
+            <field name="group_id" ref="base.group_user"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+    </data>
+</odoo>

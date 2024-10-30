@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <!-- Request -->
+    <!-- Tree View -->
+    <record id="view_requests_tree" model="ir.ui.view">
+        <field name="name">requests.tree</field>
+        <field name="model">requests</field>
+        <field name="arch" type="xml">
+            <tree string="Requests">
+                <field name="title"/>
+                <field name="body"/>
+                <field name="category"/>
+                <field name="approver_id"/>
+                <field name="user_id"/>
+                <field name="status"/>
+                <field name="request_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_requests_form" model="ir.ui.view">
+        <field name="name">requests.form</field>
+        <field name="model">requests</field>
+        <field name="arch" type="xml">
+            <form string="Create Request">
+                <sheet>
+                    <group name="details" string="Detail">
+                        <field name="title"/>
+                        <field name="body"/>
+                        <field name="category"/>
+                        <field name="approver_id"/>
+                        <field name="user_id"/>
+                    </group>
+
+                    <group name="status" string="Status and Date">
+                        <field name="status"/>
+                        <field name="request_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_requests_search" model="ir.ui.view">
+        <field name="name">requests.search</field>
+        <field name="model">requests</field>
+        <field name="arch" type="xml">
+            <search string="Search Requests">
+                <field name="title"/>
+                <field name="category"/>
+            </search>
+        </field>
+    </record>
+
+
+    <!-- Requests ~ Category -->
+    <!-- Tree View -->
+    <record id="view_requests_category_tree" model="ir.ui.view">
+        <field name="name">requests.category.tree</field>
+        <field name="model">requests.category</field>
+        <field name="arch" type="xml">
+            <tree string="Requets Category">
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_requests_category_form" model="ir.ui.view">
+        <field name="name">requests.category.form</field>
+        <field name="model">requests.category</field>
+        <field name="arch" type="xml">
+            <form string="Create Category">
+                <sheet>
+                    <group name="details" string="Detail">
+                        <field name="name"/>
+                        <field name="description"/>
+                    </group>                   
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_requests_category_search" model="ir.ui.view">
+        <field name="name">requests.category.search</field>
+        <field name="model">requests.category</field>
+        <field name="arch" type="xml">
+            <search string="Search Library">
+                <field name="name"/>
+                <field name="description"/>
+            </search>
+        </field>
+    </record>
+
+</odoo>
+

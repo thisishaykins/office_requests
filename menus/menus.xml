@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<odoo>
+    <!-- Main Menu for -->
+    <menuitem id="menu_requests_app" name="Office Request App" sequence="10"/>
+
+    <!-- Sub Menu for Calendars -->
+    <menuitem id="menu_requests" name="Request" parent="menu_requests_app" sequence="10"/>
+    
+    <menuitem id="menu_requests_books" name="Requests" parent="menu_requests_app" action="action_requests" sequence="11"/>
+    
+    <menuitem id="menu_requests_category" name="Requests Category" parent="menu_requests_app" action="action_requests_category" sequence="12"/>
+</odoo>
+

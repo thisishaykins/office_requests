@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Requests Action -->
+    <record id="action_requests" model="ir.actions.act_window">
+        <field name="name">Requests</field>
+        <field name="res_model">requests</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_requests_tree"/>
+    </record>
+
+    <!-- requests Category Action -->
+    <record id="action_requests_category" model="ir.actions.act_window">
+        <field name="name">Requests Category</field>
+        <field name="res_model">requests.category</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_requests_category_tree"/>
+    </record>
+
+</odoo>
