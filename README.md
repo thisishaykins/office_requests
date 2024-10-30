@@ -1,6 +1,6 @@
 # InterPulse ~ Master Class ~ Simple Odoo Request App
 
-![Office Request App](office_requests/static/description/app_info.png)
+![Office Request App](static/description/app_info.png)
 
 ## Summary
 
@@ -9,9 +9,9 @@ developed in a live master class coding session at InternPulse.
     - Manage Office Requests
     - Manage Request Category
 
-![Office Request App](office_requests/static/description/office_request_app.png)
+![Office Request App](static/description/office_request_app.png)
 
-![Office Request Category App](office_requests/static/description/office_request_category_app.png)
+![Office Request Category App](static/description/office_request_category_app.png)
 
 ## Logic
 
